@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../styles/DisplayMission.module.css"; // eslint-disable-line
+import styles from '../styles/DisplayMission.module.css';
 
 const displayMission = () => (
   <div className={styles.missionItems}>
