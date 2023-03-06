@@ -3,7 +3,7 @@ import React from 'react';
 import planetImg from '../assets/planet.png';
 
 const Nav = () => (
-  <nav>
+  <header>
     <div className="nav-header">
       <div className="logo-container">
         <img
@@ -17,7 +17,7 @@ const Nav = () => (
       </div>
     </div>
     <hr />
-  </nav>
+  </header>
 );
 
 export default Nav;
