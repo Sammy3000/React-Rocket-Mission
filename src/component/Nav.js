@@ -1,6 +1,6 @@
-import "./styles/Nav.css";
-import React from "react";
-import planetImg from "../assets/planet.png";
+import './styles/Nav.css';
+import React from 'react';
+import planetImg from '../assets/planet.png';
 
 const Nav = () => (
   <nav>
