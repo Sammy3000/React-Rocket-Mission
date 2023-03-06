@@ -1,5 +1,5 @@
 import React from "react";
-import displayMission from "./displayMission";
+import DisplayMission from "./DisplayMission";
 import styles from "../styles/Missions.module.css";
 function Missions() {
   return (
@@ -17,6 +17,7 @@ function Missions() {
         </div>
         <div />
       </div>
+      <DisplayMission />
     </div>
   );
 }
