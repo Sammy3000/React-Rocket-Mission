@@ -1,0 +1,35 @@
+.rocketContainer {
+  display: flex;
+  padding: 2rem;
+}
+
+.rocketLeft {
+  margin-right: 1rem;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.reservedSpan {
+  margin-right: 1rem;
+}
+
+.reservedSpanBtn {
+  background-color: rgb(86, 191, 244);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.rocketRight > * {
+  margin-bottom: 1rem;
+}
+
+.reserveRocketBtn {
+  border: none;
+  color: white;
+  background-color: rgb(86, 86, 244);
+  padding: 10px;
+  border-radius: 5px;
+}
