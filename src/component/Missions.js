@@ -1,12 +1,12 @@
 import React from "react";
 import DisplayMission from "./DisplayMission";
 import styles from "../styles/Missions.module.css";
+
 function Missions() {
   return (
     <div className={styles.missionsContainer}>
       <div className={styles.missionsHeader}>
         <div>
-          {" "}
           <p>Mission</p>
         </div>
         <div>
