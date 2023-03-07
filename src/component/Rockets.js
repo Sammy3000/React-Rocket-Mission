@@ -44,6 +44,7 @@ function Rockets() {
                   Reserved
                 </button>
               </span>
+
               {rocket.description}
             </p>
 
@@ -51,7 +52,7 @@ function Rockets() {
               type="button"
               className={styles.reserveRocketBtn}
             >
-              Reserve Rocket
+              Reserve Button
             </button>
           </div>
         </div>
