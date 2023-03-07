@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchRockets } from '../features/rockets/rocketsSlice';
 import styles from '../styles/Rockets.module.css';
 
 function Rockets() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
+
   return (
     <div className={styles.rocketContainer}>
       <img
