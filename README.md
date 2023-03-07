@@ -31,21 +31,23 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [� Table of Contents](#-table-of-contents)
+- [📖 Space Mission App ](#-space-mission-app-)
+  - [🛠 Built With ](#-built-with-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Key Features ](#key-features-)
+    - [LIVE DEMO](#live-demo)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Run tests](#run-tests)
+    - [Usage](#usage)
+  - [Authors](#authors)
+  - [👥 Author ](#-author-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -137,11 +139,11 @@ And For tracking linter errors in REACT files run:
 
 ## 👥 Author <a name="author"></a>
 
-👤 **Rachel**
+👤 **Rachel Isaac**
 
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: []()
+- GitHub: [@rachelwebdev](https://github.com/Rachelwebdev)
+- Twitter:[@rachelisaac13](https://twitter.com/Rachelisaac13)
+- LinkedIn: [Rachel Isaac](https://www.linkedin.com/in/rachelisaac13/)
 
 👤 **Towett Sammy**
 
