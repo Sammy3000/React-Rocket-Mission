@@ -21,7 +21,7 @@ const missionSlice = createSlice({
       const missions = state.mission.find(
         (result) => result.mission_id === action.payload,
       );
-      missions.reserved = true;
+      missions.reserved = !missions.reserved;
     },
   },
   extraReducers: (builder) => {
@@ -39,6 +39,5 @@ const missionSlice = createSlice({
       });
   },
 });
-const reservedMissions = (state) => state.missions.missions.filter((results) => results.reserved);
-export { reservedMissions };
+export const { joinMission } = missionSlice.actions;
 export default missionSlice.reducer;
