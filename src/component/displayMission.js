@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../styles/DisplayMission.module.css";
+import React from 'react';
+import styles from '../styles/DisplayMission.module.css';
 
 const DisplayMission = () => (
   <div className={styles.missionItems}>
