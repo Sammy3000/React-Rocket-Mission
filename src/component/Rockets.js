@@ -1,56 +1,62 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchRockets } from '../features/rockets/rocketsSlice';
 import styles from '../styles/Rockets.module.css';
 
 function Rockets() {
   const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets.rockets);
+  const status = useSelector((state) => state.rockets.status);
+  const error = useSelector((state) => state.rockets.error);
 
   useEffect(() => {
     dispatch(fetchRockets());
   }, [dispatch]);
 
+  if (status === 'loading') {
+    return <h1>Loading...</h1>;
+  }
+
+  if (status === 'failed') {
+    return <div>{error}</div>;
+  }
+
   return (
-    <div className={styles.rocketContainer}>
-      <img
-        src=""
-        alt="rocket avatar"
-        className={styles.rocketLeft}
-      />
-      <div className={styles.rocketRight}>
-        <h2 className={styles.heading}>Falcon 1</h2>
-        <p className={styles.description}>
-          <span className={styles.reservedSpan}>
+    <>
+      {rockets.map((rocket) => (
+        <div
+          className={styles.rocketContainer}
+          key={rocket.rocket_id}
+        >
+          <img
+            src={rocket.flickr_images[0]}
+            alt="rocket avatar"
+            className={styles.rocketLeft}
+          />
+          <div className={styles.rocketRight}>
+            <h2 className={styles.heading}>{rocket.rocket_name}</h2>
+            <p className={styles.description}>
+              <span className={styles.reservedSpan}>
+                <button
+                  type="button"
+                  className={styles.reservedSpanBtn}
+                >
+                  Reserved
+                </button>
+              </span>
+              {rocket.description}
+            </p>
+
             <button
               type="button"
-              className={styles.reservedSpanBtn}
+              className={styles.reserveRocketBtn}
             >
-              Reserved
+              Reserve Rocket
             </button>
-          </span>
-          Fog everywhere. Fog up the river, where it flows among green aits and
-          meadows; fog down the river, where it rolls deified among the tiers of
-          shipping and the waterside pollutions of a great (and dirty) city. Fog
-          on the Essex marshes, fog on the Kentish heights. Fog creeping into
-          the cabooses of collier-brigs; fog lying out on the yards and hovering
-          in the rigging of great ships; fog drooping on the gunwales of barges
-          and small boats. Fog in the eyes and throats of ancient Greenwich
-          pensioners, wheezing by the firesides of their wards; fog in the stem
-          and bowl of the afternoon pipe of the wrathful skipper, down in his
-          close cabin; fog cruelly pinching the toes and fingers of his
-          shivering little apprentice boy on deck. Chance people on the bridges
-          peeping over the parapets into a nether sky of fog, with fog all round
-          them, as if they were up in a balloon and hanging in the misty clouds.
-        </p>
-
-        <button
-          type="button"
-          className={styles.reserveRocketBtn}
-        >
-          Reserve Rocket
-        </button>
-      </div>
-    </div>
+          </div>
+        </div>
+      ))}
+    </>
   );
 }
 

@@ -5,18 +5,22 @@
 
 .rocketLeft {
   margin-right: 1rem;
-  width: 100%;
-  border: 2px solid black;
+  width: 20%;
 }
 
 .reservedSpan {
-  margin-right: 1rem;
+  margin-right: 0.8rem;
+}
+
+.description {
+  line-height: 1.5;
 }
 
 .reservedSpanBtn {
   background-color: rgb(86, 191, 244);
   border: none;
-  padding: 5px;
+  padding: 3px;
+  font-size: 0.7rem;
   border-radius: 5px;
   color: #fff;
   font-weight: bold;
@@ -32,4 +36,8 @@
   background-color: rgb(86, 86, 244);
   padding: 10px;
   border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
 }
