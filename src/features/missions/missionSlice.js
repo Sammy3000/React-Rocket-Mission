@@ -15,6 +15,7 @@ const initialState = {
   missions: [],
   status: 'idle',
   error: null,
+  reserved: [],
 };
 
 const missionSlice = createSlice({
@@ -23,12 +24,18 @@ const missionSlice = createSlice({
   reducers: {
     joinMission: (state, action) => {
       const missionIndex = state.missions.findIndex(
-        (mission) => mission.mission_id === action.payload,
+        (mission) => mission.mission_id === action.payload
       );
       if (missionIndex !== -1) {
         const mission = state.missions[missionIndex];
         mission.reserved = !mission.reserved;
       }
+    },
+    myReservedMissions: (state) => {
+      const missions = state.missions.filter(
+        (mission) => mission.reserved === true
+      );
+      return { ...state, reserved: missions };
     },
   },
   extraReducers: (builder) => {
@@ -46,9 +53,8 @@ const missionSlice = createSlice({
       });
   },
 });
-export const { joinMission } = missionSlice.actions;
+export const { joinMission, myReservedMissions } = missionSlice.actions;
 export const allMissions = (state) => state.missions.missions;
 export const missionsStatus = (state) => state.missions.status;
 export const missionsError = (state) => state.missions.error;
-export const reservedMissions = (state) => state.missions.missions.filter((results) => results.reserved);
 export default missionSlice.reducer;
