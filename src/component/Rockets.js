@@ -44,15 +44,16 @@ function Rockets() {
           <div className={styles.rocketRight}>
             <h2 className={styles.heading}>{rocket.rocket_name}</h2>
             <p className={styles.description}>
-              <span className={styles.reservedSpan}>
-                <button
-                  type="button"
-                  className={styles.reservedSpanBtn}
-                >
-                  Reserved
-                </button>
-              </span>
-
+              {rocket.reserved && (
+                <span className={styles.reservedSpan}>
+                  <button
+                    type="button"
+                    className={styles.reservedSpanBtn}
+                  >
+                    Reserved
+                  </button>
+                </span>
+              )}
               {rocket.description}
             </p>
 
