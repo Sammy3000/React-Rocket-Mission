@@ -5,7 +5,7 @@ import styles from '../styles/Missions.module.css';
 import { getMission } from '../features/missions/missionSlice';
 
 function Missions() {
-  const { mission } = useSelector((store) => store.mission);
+  const { missions } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMission());
@@ -24,7 +24,7 @@ function Missions() {
         </div>
         <div />
       </div>
-      {mission.map((mision) => (
+      {missions.map((mision) => (
         <DisplayMission
           key={mision.mission_id}
           id={mision.mission_id}
