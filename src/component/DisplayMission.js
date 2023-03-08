@@ -19,6 +19,9 @@ const DisplayMission = ({ name, description }) => {
       dispatch(getMission());
     }
   }, [dispatch, status]);
+  function displayJoinMission(currentState) {
+    return currentState ? 'Leave Mission' : 'Join Mission';
+  }
   return (
     <div className={styles.missionItems}>
       <div className={styles.missionHead}>
@@ -29,40 +32,21 @@ const DisplayMission = ({ name, description }) => {
       </div>
 
       <div className={styles.buttons}>
-        <div className={styles.buttons}>
-          {missions.reserved ? (
-            <button
-              onClick={handleJoinMission(missions.mission_id)}
-              type="button"
-              className={styles.joinMissionBtn}
-            >
-              Leave Mission
-            </button>
-          ) : (
-            <button
-              onClick={handleJoinMission(missions.mission_id)}
-              type="button"
-              className={styles.joinMissionBtn}
-            >
-              Join Mission
-            </button>
-          )}
-        </div>
-        {missions.reserved ? (
-          <button
-            type="button"
-            className={styles.memberBtn}
-          >
-            Active Member
-          </button>
-        ) : (
-          <button
-            type="button"
-            className={styles.memberBtn}
-          >
-            NOT A MEMBER
-          </button>
-        )}
+        <button
+          onClick={handleJoinMission(missions.mission_id)}
+          type="button"
+          className={styles.joinMissionBtn}
+        >
+          {displayJoinMission(missions.reserved)}
+        </button>
+      </div>
+      <div className={styles.buttons}>
+        <button
+          type="button"
+          className={styles.memberBtn}
+        >
+          NOT A MEMBER
+        </button>
       </div>
     </div>
   );
