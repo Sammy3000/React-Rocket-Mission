@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRockets } from '../features/rockets/rocketsSlice';
+import { fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
 import styles from '../styles/Rockets.module.css';
 
 function Rockets() {
@@ -12,6 +12,14 @@ function Rockets() {
   useEffect(() => {
     dispatch(fetchRockets());
   }, [dispatch]);
+
+  function displayReservationText(currentState) {
+    return currentState ? 'Cancel Reservation' : 'Reserve Rockets';
+  }
+
+  function handleReserveRocket(id) {
+    dispatch(reserveRocket(id));
+  }
 
   if (status === 'loading') {
     return <h1>Loading...</h1>;
@@ -49,10 +57,11 @@ function Rockets() {
             </p>
 
             <button
+              onClick={() => handleReserveRocket(rocket.id)}
               type="button"
               className={styles.reserveRocketBtn}
             >
-              Reserve Button
+              {displayReservationText(rocket.reserved)}
             </button>
           </div>
         </div>
