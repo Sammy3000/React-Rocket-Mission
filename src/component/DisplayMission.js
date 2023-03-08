@@ -32,7 +32,7 @@ const DisplayMission = ({ name, description }) => {
         <div className={styles.buttons}>
           {missions.reserved ? (
             <button
-              onClick={() => handleJoinMission(missions.mission_id)}
+              onClick={handleJoinMission(missions.mission_id)}
               type="button"
               className={styles.joinMissionBtn}
             >
@@ -40,7 +40,7 @@ const DisplayMission = ({ name, description }) => {
             </button>
           ) : (
             <button
-              onClick={() => handleJoinMission(missions.mission_id)}
+              onClick={handleJoinMission(missions.mission_id)}
               type="button"
               className={styles.joinMissionBtn}
             >
