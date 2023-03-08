@@ -24,7 +24,7 @@ const missionSlice = createSlice({
   reducers: {
     joinMission: (state, action) => {
       const missionIndex = state.missions.findIndex(
-        (mission) => mission.mission_id === action.payload
+        (mission) => mission.mission_id === action.payload,
       );
       if (missionIndex !== -1) {
         const mission = state.missions[missionIndex];
@@ -33,7 +33,7 @@ const missionSlice = createSlice({
     },
     myReservedMissions: (state) => {
       const missions = state.missions.filter(
-        (mission) => mission.reserved === true
+        (mission) => mission.reserved === true,
       );
       return { ...state, reserved: missions };
     },

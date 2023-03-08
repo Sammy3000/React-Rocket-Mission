@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { myReservedRockets } from '../features/rockets/rocketsSlice';
-import {
-  myReservedMissions,
-  missionsStatus,
-} from '../features/missions/missionSlice';
+import { myReservedMissions } from '../features/missions/missionSlice';
 
 function MyProfile() {
   const dispatch = useDispatch();
   const status = useSelector((state) => state.rockets.status);
   const reserved = useSelector((state) => state.rockets.reserved);
   const reservedMission = useSelector((store) => store.missions.reserved);
-  const missionStatus = useSelector(missionsStatus);
 
   useEffect(() => {
     dispatch(myReservedRockets());
