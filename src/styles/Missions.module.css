@@ -19,6 +19,7 @@
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .missionItems {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1.2fr;
@@ -66,6 +67,7 @@
   border-radius: 5px;
   color: #fff;
 }
+
 .activeMemberBtn {
   background-color: rgb(75, 75, 248);
   padding: 0.25rem 1.4rem;
@@ -74,6 +76,7 @@
   border-radius: 5px;
   color: #fff;
 }
+
 .joinMissionBtn {
   background-color: transparent;
   padding: 0.5rem 1.8rem;
@@ -82,6 +85,7 @@
   border-radius: 5px;
   font-weight: 500;
 }
+
 .leaveMissionBtn {
   background-color: transparent;
   padding: 0.5rem 1.8rem;
