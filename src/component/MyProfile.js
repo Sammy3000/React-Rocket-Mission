@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { myReservedRockets } from '../features/rockets/rocketsSlice';
 import { myReservedMissions } from '../features/missions/missionSlice';
+import styles from '../styles/MyProfile.module.css';
 
 function MyProfile() {
   const dispatch = useDispatch();
@@ -33,12 +34,12 @@ function MyProfile() {
   }
 
   return (
-    <div className="mainProfile">
-      <div>
+    <div className={styles.mainProfile}>
+      <div className={styles.container}>
         <h1>Reserved Rockets</h1>
         <ul>{renderReservedRockets}</ul>
       </div>
-      <div>
+      <div className={styles.container}>
         <h1>Reserved Missions</h1>
         <ul>{renderReservedMissions}</ul>
       </div>
