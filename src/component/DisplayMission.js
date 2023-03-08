@@ -4,21 +4,17 @@ import {
   getMission,
   joinMission,
   allMissions,
-  missionsStatus,
 } from '../features/missions/missionSlice';
 import styles from '../styles/DisplayMission.module.css';
 
 const DisplayMission = ({ name, description }) => {
   const dispatch = useDispatch();
-  const status = useSelector(missionsStatus);
   const missions = useSelector(allMissions);
 
   const handleJoinMission = (id) => dispatch(joinMission(id));
   useEffect(() => {
-    if (status === 'idle') {
-      dispatch(getMission());
-    }
-  }, [dispatch, status]);
+    dispatch(getMission());
+  }, [dispatch]);
   function displayJoinMission(currentState) {
     return currentState ? 'Leave Mission' : 'Join Mission';
   }
