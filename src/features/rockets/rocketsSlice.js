@@ -12,7 +12,7 @@ export const fetchRockets = createAsyncThunk(
       object.reserved = false;
     });
     return response.data;
-  }
+  },
 );
 
 const initialState = {
@@ -28,13 +28,13 @@ const rocketsSlice = createSlice({
   reducers: {
     reserveRocket: (state, action) => {
       const rocket = state.rockets.find(
-        (results) => results.id === action.payload
+        (results) => results.id === action.payload,
       );
       rocket.reserved = !rocket.reserved;
     },
     myReservedRockets: (state) => {
       const rockets = state.rockets.filter(
-        (rocket) => rocket.reserved === true
+        (rocket) => rocket.reserved === true,
       );
 
       return { ...state, reserved: rockets };

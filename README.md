@@ -1,49 +1,27 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Space Mission App ](#-space-mission-app-)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Key Features ](#key-features-)
-    - [LIVE DEMO](#live-demo)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started--1)
+    - [Prerequisites](#prerequisites-1)
     - [Setup](#setup)
     - [Install](#install)
-    - [Run tests](#run-tests)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
   - [Authors](#authors)
   - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -53,13 +31,21 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Space Mission App <a name="about-project"></a>
 
+**Space Mission App** is a React project with Redux. Minimal app that fetches data from SpaceX API and display missions and rockets details. Project is developed for Microverse React Group project task.
+
 ## 🛠 Built With <a name="built-with"></a>
 
-- ![Redux](https://img.shields.io/badge/-Redux-1d1919?style=flat&logo=redux)
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-- ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
-- ![HTML](https://img.shields.io/badge/-HTML-000000?style=flat&logo=html)
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Build With</summary>
+  <ul>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -77,63 +63,71 @@ In order to run this project you need:
 - Git/Github
 - React, Redux, HTML,CSS knowledge.
 - VS code or any other equivalent tool.
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Single Page Application**
+- **Fetching data from Api with createAsyncThunk and render on pages**
 
- <!-- LIVE DEMO -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### LIVE DEMO
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
-<!--[Live Demo Link]()-->
+- [Live Demo]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+In order to run this project you need: a properly working pc or laptop and a modern web browser.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:Rachelwebdev/rocket-mission-react.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-- to install locally run git clone `https://github.com/Rachelwebdev/rocket-mission-react.git`
-- open the cloned directory with VSCode
-
-### Run tests
-
-To run tests, run the following command:
-
-For tracking linter errors locally you need to follow these steps:
-
-After cloning the project you need to run these commands
-
-`npm install` `This command will download all the dependancies of the project`
-
-For tracking linter errors in CSS or SASS files run:
-
-`npx stylelint "**/*.{css,scss}`
-
-And For tracking linter errors in REACT files run:
-
-`npx eslint "**/*.{js,jsx}"`
+```sh
+  cd my-folder
+  git clone git@github.com:Rachelwebdev/rocket-mission-react.git
+  npm install
+```
 
 ### Usage
 
-- Feel free to use this project.
-- After cloning run `npm install` then `npm start`
+Use this app by runing:
 
-<!-- AUTHORS -->
+```sh
+  cd my-folder
+  git clone git@github.com:Rachelwebdev/rocket-mission-react.git
+  npm install
+  npm start
+```
+
+### Run tests
+
+Test this app by runing:
+
+```sh
+  cd my-folder
+  git clone git@github.com:Rachelwebdev/rocket-mission-react.git
+  npm install
+  npm test
+```
+
+### Deployment
+
+You can deploy this project using: GitHub but if you want to deploy make sure you let me know first :3
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
 
@@ -151,24 +145,38 @@ And For tracking linter errors in REACT files run:
 - Twitter: [@towettsam](https://twitter.com/sammy15375658)
 - LinkedIn: [@towettSammy](https://www.linkedin.com/in/towett-sammy-43476024a/)
 
-<!-- CONTRIBUTING -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add extra pages**
+- [ ] **Add a dark and light mode**
+- [ ] **Make it responsive**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Rachelwebdev/rocket-mission-react/issues).
 
-<!-- SUPPORT -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project and share it with your friends.
 
-<!-- ACKNOWLEDGEMENTS -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thanks to Code Reviewers
+- I would like to thank my Microverse partners.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

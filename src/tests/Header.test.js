@@ -12,7 +12,7 @@ describe('Header component', () => {
         <BrowserRouter>
           <Header />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
 
     expect(container).toMatchSnapshot();

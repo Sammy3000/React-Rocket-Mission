@@ -8,7 +8,7 @@ describe('testing Profile Page components', () => {
     const profilePage = renderer.create(
       <Provider store={store}>
         <MyProfile />
-      </Provider>
+      </Provider>,
     );
     expect(profilePage).toMatchSnapshot();
   });

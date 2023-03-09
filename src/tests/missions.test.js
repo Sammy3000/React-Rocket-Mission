@@ -1,13 +1,14 @@
-import Missions from '../component/Missions';
 import { Provider } from 'react-redux';
-import store from '../features/store';
 import { render } from '@testing-library/react';
+import Missions from '../component/Missions';
+import store from '../features/store';
+
 describe('Testing missions component', () => {
   it('Test Missions Component', () => {
     const missionsComponent = render(
       <Provider store={store}>
         <Missions />
-      </Provider>
+      </Provider>,
     );
     expect(missionsComponent).toMatchSnapshot();
   });
