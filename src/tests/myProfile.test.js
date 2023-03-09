@@ -1,14 +1,15 @@
-import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../features/store';
+import MyProfile from '../component/MyProfile';
 
-describe('testing snapshots of Rocket component', () => {
-  it('testing myProfile component', () => {
-    const profileComponent = render(
+describe('testing Profile Page components', () => {
+  it('testing ProfilePage component', () => {
+    const profilePage = renderer.create(
       <Provider store={store}>
-        <myProfile />
+        <MyProfile />
       </Provider>
     );
-    expect(profileComponent).toMatchSnapshot();
+    expect(profilePage).toMatchSnapshot();
   });
 });
