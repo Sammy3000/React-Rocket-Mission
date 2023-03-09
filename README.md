@@ -72,7 +72,7 @@ In order to run this project you need:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- See it live by clicking [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
