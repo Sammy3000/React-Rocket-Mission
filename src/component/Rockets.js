@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRockets, reserveRocket } from '../features/rockets/rocketsSlice';
+import { reserveRocket } from '../features/rockets/rocketsSlice';
 import styles from '../styles/Rockets.module.css';
 
 function Rockets() {
@@ -8,10 +8,6 @@ function Rockets() {
   const rockets = useSelector((state) => state.rockets.rockets);
   const status = useSelector((state) => state.rockets.status);
   const error = useSelector((state) => state.rockets.error);
-
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
 
   function displayReservationText(currentState) {
     return currentState ? 'Cancel Reservation' : 'Reserve Rockets';
