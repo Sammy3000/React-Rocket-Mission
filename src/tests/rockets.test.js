@@ -8,7 +8,7 @@ describe('testing snapshots of Rocket component', () => {
     const rocketComponent = render(
       <Provider store={store}>
         <Rockets />
-      </Provider>
+      </Provider>,
     );
     expect(rocketComponent).toMatchSnapshot();
   });
