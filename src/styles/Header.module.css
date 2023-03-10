@@ -1,0 +1,21 @@
+.navHeader {
+  width: 100vw;
+  padding: 0.2rem 1rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoContainer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: rgb(6, 6, 6, 0.8);
+}
