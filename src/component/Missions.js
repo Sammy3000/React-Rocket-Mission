@@ -4,14 +4,16 @@ import styles from '../styles/Missions.module.css';
 import { joinMission } from '../features/missions/missionSlice';
 
 function Missions() {
-  const { missions } = useSelector((store) => store.missions);
+  const { missions, status } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
 
   function displayJoinMission(currentState) {
     return currentState ? 'Leave Mission' : 'Join Mission';
   }
   const handleJoinMission = (id) => dispatch(joinMission(id));
-
+  if (status === 'loading') {
+    return <h3 className={styles.loading}>Loading Missions...</h3>;
+  }
   return (
     <div className={styles.missionsContainer}>
       <div className={styles.missionsHeader}>

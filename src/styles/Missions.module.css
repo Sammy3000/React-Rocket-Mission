@@ -95,3 +95,7 @@
   border: 1px solid red;
   color: red;
 }
+.loading {
+  font-size: 1.5rem;
+  color: green;
+}
