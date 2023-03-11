@@ -8,12 +8,12 @@ function Navbar() {
       <nav className={styles.navLinks}>
         <NavLink
           className={styles.navLink}
-          to="/"
+          to="/rockets"
           style={({ isActive }) => ({
             textDecoration: isActive ? 'underline' : 'none',
           })}
         >
-          My Profile
+          Rockets
         </NavLink>
 
         <NavLink
@@ -28,12 +28,12 @@ function Navbar() {
 
         <NavLink
           className={styles.navLink}
-          to="/rockets"
+          to="/"
           style={({ isActive }) => ({
             textDecoration: isActive ? 'underline' : 'none',
           })}
         >
-          Rockets
+          My Profile
         </NavLink>
       </nav>
     </div>
