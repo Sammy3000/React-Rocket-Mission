@@ -33,6 +33,8 @@
 
 **Space Mission App** is a React project with Redux. Minimal app that fetches data from SpaceX API and display missions and rockets details. Project is developed for Microverse React Group project task.
 
+![](./src/assets/space x.PNG)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
