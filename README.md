@@ -35,19 +35,14 @@
 
 ![](./src/assets/space.PNG)
 
+
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Build With</summary>
-  <ul>
-    <li><a href="https://html.com/">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://www.javascript.com/">JavaScript</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+- ![Redux](https://img.shields.io/badge/-Redux-1d1919?style=flat&logo=redux)
+- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
+- ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
+- ![HTML](https://img.shields.io/badge/-HTML-000000?style=flat&logo=html)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
